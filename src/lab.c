@@ -10,6 +10,14 @@ int subtract(int a, int b) {
     return a - b;
 }
 
+int incorrectAdd(int a, int b) {
+    return a + b + 1; // Intentionally incorrect
+}
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
 char *get_greeting(const char *restrict name)
 {
   if (name == NULL)
@@ -28,6 +36,9 @@ char *get_greeting(const char *restrict name)
   size_t alloc_size = (size_t) length + 1; // +1 for the null terminator
   char *greeting = malloc( alloc_size);
 
+  // //memory leak
+  // int* ptr = (int*)malloc(sizeof(int));
+  // ptr = NULL;
 
   if (greeting == NULL) // GCOVR_EXCL_START
   {
