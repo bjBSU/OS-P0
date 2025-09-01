@@ -28,6 +28,24 @@ int add(int a, int b);
  */
 int subtract(int a, int b);
 
+/** * @brief Multiplies two integers.
+ *
+ * This function multiplies two integers and returns the result.
+ * @param a The first integer.
+ * @param b The second integer.
+ * @return The product of a and b.
+ */
+int multiply(int a, int b);
+
+/** * @brief Adds two integers and returns an incorrect result.
+ *
+ * This function adds two integers and returns an incorrect result.
+ * @param a The first integer.
+ * @param b The second integer.
+ * @return An incorrect sum of a and b.
+ */
+int incorrectAdd(int a, int b);
+
 
 
 #endif // LAB_H
