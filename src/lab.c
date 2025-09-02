@@ -35,7 +35,7 @@ char *get_greeting(const char *restrict name)
   //Casting is safe here because we know length is non-negative
   size_t alloc_size = (size_t) length + 1; // +1 for the null terminator
   char *greeting = malloc( alloc_size);
-
+  
   // //memory leak
   // int* ptr = (int*)malloc(sizeof(int));
   // ptr = NULL;
@@ -48,6 +48,5 @@ char *get_greeting(const char *restrict name)
 
   // Create the greeting message
   snprintf(greeting, alloc_size, "Hello, %s!", name);
-
   return greeting;
 }

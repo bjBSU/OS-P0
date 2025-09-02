@@ -21,6 +21,14 @@ int main(void)
     } else {
         printf("Failed to create greeting.\n");
     }
+
+    //multiply and incorrect Add:
+    int result_multiply = multiply(5, 3);
+    printf("Multiplication Result: %d\n", result_multiply);
+
+    int result_incorrectAdd = incorrectAdd(5, 3);
+    printf("Incorrect Add Result: %d\n", result_incorrectAdd);
+
     //memory leak
     // int* ptr = (int*)malloc(sizeof(int));//memory allocated
     // ptr = NULL;//memeory leak original pointer lost, memory not freed
