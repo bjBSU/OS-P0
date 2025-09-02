@@ -21,5 +21,9 @@ int main(void)
     } else {
         printf("Failed to create greeting.\n");
     }
+    //memory leak
+    // int* ptr = (int*)malloc(sizeof(int));//memory allocated
+    // ptr = NULL;//memeory leak original pointer lost, memory not freed
+    // *(int *)0 = 0; // Intentional crash for testing purposes
     return 0;
 }
